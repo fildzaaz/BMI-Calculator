@@ -1,25 +1,42 @@
 function calculateBmi() {
-  var weight = document.techBMI.weight.value
-  var height = document.techBMI.height.value / 100
+  var weight = document.techBMI.weight.value;
+  var height = document.techBMI.height.value / 100;
+  var finalBmi = weight / (height * height);
+  var finalLabel;
 
+  function htmlEncode(str){
+    return String(str).replace(/[^\w. ]/gi, function(c){
+       return '&#'+c.charCodeAt(0)+';';
+    });
+  }
+
+  function jsEscape(str){
+    return String(str).replace(/[^\w. ]/gi, function(c){
+       return '\\u'+('0000'+c.charCodeAt(0).toString(16)).slice(-4);
+    });
+  }
+  
   if (weight > 0 && height > 0) {
-    var finalBmi = weight / (height * height)
     document.techBMI.bmi.value = finalBmi.toFixed(3);
     if (finalBmi < 18.5) {
-      document.techBMI.meaning.value = "You are unhealthy, too thin."
+      finalLabel = "You are unhealthy, too thin.";
+      document.techBMI.meaning.value = finalLabel;
     }
     if (finalBmi > 18.5 && finalBmi < 25) {
-      document.techBMI.meaning.value = "You are healthy enough."
+      finalLabel = "You are healthy enough.";
+      document.techBMI.meaning.value = finalLabel;
     }
     if (finalBmi > 25 && finalBmi < 30) {
-      document.techBMI.meaning.value = "You have overweight."
+      finalLabel = "You have overweight.";
+      document.techBMI.meaning.value = finalLabel;
     }
     if (finalBmi > 30) {
-      document.techBMI.meaning.value = "Your condition is serious."
+      finalLabel = "Your condition is serious.";
+      document.techBMI.meaning.value = finalLabel;
     }
   }
   else {
-    alert("Data you've entered might be incorrect. Please check and try again.")
+    alert("Data you've entered might be incorrect. Please check and try again.");
   }
-
 }
+
