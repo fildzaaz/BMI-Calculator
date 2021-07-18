@@ -3,18 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./style.css">
-
+  <script>document.body.innerHTML = htmlEncode(untrustedValue)</script>
+  <script>document.write('<script>x="'+jsEscape(untrustedValue)+'";<\/script>')</script>
+  
 </head>
 <body>
+	<header class="mainHeader">
+		<h1>BMI Calculator</h1>
+	</header>
+	<main> 
+		<article class="description">
+		<h2>What is BMI?</h2>
+		<p>BMI is the acronym for Body Mass Index, a parameter adopted by the World Health Organization for
+		  calculate the ideal weight of each person.</p>
+		<p>The index is calculated as follows: the patient's weight is divided by his height raised to the
+		  square. 
+		  The individual is said to have normal weight when the BMI result is between 18.5 and 24.9.</p>
+	  </article>
+	</main>
 <body>
 	<div>
 		<form name="techBMI">
 		<h3>BMI (Body Mass Index)</h3>
 		<br/>
-		<input type="text" name="weight" placeholder="Enter Weight (kg)" size="20"><br /><br/>
-		<input type="text" name="height" placeholder="Enter Height (cm)" size="20"><br /><br/>
-		<input class="decoration-one px-3 py-2" type="button" value="Calculate BMI" onClick="calculateBmi()"><br /><br/>
-		<input type="text" name="bmi" placeholder="Your BMI Will be here" size="20"><br /><br/>
+		<input type="number" name="weight" placeholder="Enter Weight (kg)" size="20"><br /><br/>
+		<input type="number" name="height" placeholder="Enter Height (cm)" size="20"><br /><br/>
+		<input class="decoration-one px-3 py-2" type="button" value="Calculate BMI" onClick="send()"><br /><br/>
+		<input type="number" name="bmi" placeholder="Your BMI Will be here" size="20"><br /><br/>
 		<input type="text" name="meaning" size="35"><br /><br/>
 		<input class="decoration-one px-3 py-2" type="reset" value="Reset" />
 		<br/>
@@ -22,7 +37,8 @@
 		</div>
 </body>
 
-  <script  src="./script.js"></script>
+<script  src="./script.js"></script>
+<script  src="./post.js"></script>
 
 </body>
 </html>
