@@ -1,0 +1,34 @@
+{
+  "BMI": [
+    {
+      "bmiValue": "16.620",
+      "bmiLabel": "You are unhealthy, too thin.",
+      "id": 1
+    },
+    {
+      "bmiValue": "19.592",
+      "bmiLabel": "You are healthy enough.",
+      "id": 2
+    },
+    {
+      "bmiValue": "18.365",
+      "bmiLabel": "You are unhealthy, too thin.",
+      "id": 3
+    },
+    {
+      "bmiValue": "23.437",
+      "bmiLabel": "You are healthy enough.",
+      "id": 4
+    },
+    {
+      "bmiValue": "22.266",
+      "bmiLabel": "You are healthy enough.",
+      "id": 5
+    },
+    {
+      "bmiValue": "20.312",
+      "bmiLabel": "You are healthy enough.",
+      "id": 6
+    }
+  ]
+}
