@@ -10,8 +10,7 @@ on:
 
 jobs: 
   build:
-    shell: bash
-    working-directory: scripts
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -22,8 +21,7 @@ jobs:
 
   publish-npm:
     needs: build
-    shell: bash
-    working-directory: scripts
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -37,8 +35,7 @@ jobs:
 
   publish-gpr:
     needs: build
-    shell: bash
-    working-directory: scripts
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       packages: write
