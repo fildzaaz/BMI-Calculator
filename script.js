@@ -19,15 +19,15 @@ function calculateBmi() {
   if (weight > 0 && height > 0) {
     document.techBMI.bmi.value = finalBmi.toFixed(3);
     if (finalBmi < 18.5) {
-      finalLabel = "You are unhealthy, too thin.";
+      finalLabel = "Underweight.";
       document.techBMI.meaning.value = finalLabel;
     }
     if (finalBmi > 18.5 && finalBmi < 25) {
-      finalLabel = "You are healthy enough.";
+      finalLabel = "Normal.";
       document.techBMI.meaning.value = finalLabel;
     }
     if (finalBmi > 25 && finalBmi < 30) {
-      finalLabel = "You have overweight.";
+      finalLabel = "Overweight.";
       document.techBMI.meaning.value = finalLabel;
     }
     if (finalBmi > 30) {
