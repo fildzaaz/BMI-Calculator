@@ -3,7 +3,12 @@
     {
       "bmiValue": "null",
       "bmiLabel": "null",
-  
+      "id": 1
+    },
+    {
+      "bmiValue": "24.342",
+      "bmiLabel": "You are healthy enough.",
+      "id": 2
     }
   ]
 }
