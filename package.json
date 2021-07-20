@@ -1,7 +1,17 @@
 {   
-        "name" : "BMI_Calculatro_Package",
-        "version": "1.2.5",
-        "description": "to calculate your body mass index",
-        "email" : "fildzaamaliazhafira@gmail.com",
-        "url" : "https://github.com/fildzaaz/BMI-Calculator"
+    "name" : "bmi_calculator_package",
+    "version": "1.2.5",
+    "description": "to calculate your body mass index",
+    "email" : "fildzaamaliazhafira@gmail.com",
+    "url" : "https://github.com/fildzaaz/BMI-Calculator",
+
+    "publishConfig": {
+    "registry":"https://npm.pkg.github.com/@fildzaaz"
+},
+
+"repository": {
+"type": "git",
+"url": "https://github.com/fildzaaz/BMI-Calculator"
+}
+
 }
