@@ -7,6 +7,11 @@ The following tools were used in the construction of the project:
 
 # For Security prevent XSS, this App using 2 function
 
+To prevent a XSS attack, you need to sanitize any third-party content before rendering it into the UI. 
+There are a few ways to do that.
+
+Sanitizing will remove any illegal character from the data.
+
 *First function is to escape user input in an HTML context in JavaScript, so we need our own HTML encoder.
 Because JavaScript doesn't provide an API to encode HTML.*
 
