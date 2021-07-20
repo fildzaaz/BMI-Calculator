@@ -6,11 +6,7 @@
     "url" : "https://github.com/fildzaaz/BMI-Calculator",
 
     "publishConfig": {
-<<<<<<< HEAD
-    "registry":"https://npm.pkg.github.com"
-=======
-    "registry":"https://npm.pkg.github.com/@fildzaaz"
->>>>>>> development
+    "registry":"https://npm.pkg.github.com/@fildzaaz/BMI-Calculator"
 },
 
 "repository": {
@@ -18,8 +14,4 @@
 "url": "https://github.com/fildzaaz/BMI-Calculator"
 }
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> development
